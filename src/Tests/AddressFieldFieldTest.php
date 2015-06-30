@@ -11,6 +11,8 @@ use Drupal\simpletest\WebTestBase;
 
 /**
  * Tests the creation of addressfield fields.
+ *
+ * @group field_types
  */
 class AddressFieldFieldTest extends WebTestBase {
 
@@ -27,14 +29,6 @@ class AddressFieldFieldTest extends WebTestBase {
 
   protected $instance;
   protected $web_user;
-
-  public static function getInfo() {
-    return array(
-      'name'  => 'Addressfield field',
-      'description'  => "Test the creation of addressfield fields.",
-      'group' => 'Field types'
-    );
-  }
 
   function setUp() {
     parent::setUp();

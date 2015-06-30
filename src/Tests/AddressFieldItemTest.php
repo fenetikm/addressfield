@@ -13,6 +13,7 @@ use Drupal\field\Tests\FieldUnitTestBase;
 
 /**
  * Tests the new entity API for the addressfield field type.
+ * @group field_types
  */
 class AddressFieldItemTest extends FieldUnitTestBase {
 
@@ -22,14 +23,6 @@ class AddressFieldItemTest extends FieldUnitTestBase {
    * @var array
    */
   public static $modules = array('addressfield');
-
-  public static function getInfo() {
-    return array(
-      'name' => 'Addressfield field item',
-      'description' => 'Tests the new entity API for the addressfield field type.',
-      'group' => 'Field types',
-    );
-  }
 
   public function setUp() {
     parent::setUp();
